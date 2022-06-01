@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIKit_scrollView_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BND-WC-wRU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1456"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mt4-gP-CfU" userLabel="ContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="613.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제품리뷰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qP-KT-qCW">
+                                                <rect key="frame" x="10" y="10" width="59" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDg-RY-U7N">
+                                                <rect key="frame" x="10" y="44.5" width="394" height="487"/>
+                                                <mutableString key="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스코롤뷰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="496-sY-ht8">
+                                                <rect key="frame" x="10" y="546.5" width="59" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용물에 따라 크기가 조절 되는 스커롤 뷰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wh-5E-6tc">
+                                                <rect key="frame" x="10" y="582.5" width="276.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.31019426770000003" blue="0.4597175235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="9Wh-5E-6tc" firstAttribute="leading" secondItem="Mt4-gP-CfU" secondAttribute="leading" constant="10" id="1MI-QQ-He8"/>
+                                            <constraint firstItem="4qP-KT-qCW" firstAttribute="top" secondItem="Mt4-gP-CfU" secondAttribute="top" constant="10" id="45s-a1-0SB"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="496-sY-ht8" secondAttribute="trailing" constant="10" id="5E6-ye-9cn"/>
+                                            <constraint firstItem="4qP-KT-qCW" firstAttribute="leading" secondItem="Mt4-gP-CfU" secondAttribute="leading" constant="10" id="8fz-xL-Hzq"/>
+                                            <constraint firstItem="496-sY-ht8" firstAttribute="leading" secondItem="Mt4-gP-CfU" secondAttribute="leading" constant="10" id="CFF-NC-Xgu"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Wh-5E-6tc" secondAttribute="trailing" constant="10" id="FTM-WC-f7B"/>
+                                            <constraint firstItem="496-sY-ht8" firstAttribute="top" secondItem="CDg-RY-U7N" secondAttribute="bottom" constant="15" id="Qzl-XW-33E"/>
+                                            <constraint firstItem="9Wh-5E-6tc" firstAttribute="top" secondItem="496-sY-ht8" secondAttribute="bottom" constant="15" id="f7I-7M-waw"/>
+                                            <constraint firstItem="CDg-RY-U7N" firstAttribute="leading" secondItem="Mt4-gP-CfU" secondAttribute="leading" constant="10" id="hEm-Za-Ns6"/>
+                                            <constraint firstAttribute="bottom" secondItem="9Wh-5E-6tc" secondAttribute="bottom" constant="10" id="k9i-4R-cYa"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4qP-KT-qCW" secondAttribute="trailing" constant="10" id="mzx-UV-xGu"/>
+                                            <constraint firstItem="CDg-RY-U7N" firstAttribute="top" secondItem="4qP-KT-qCW" secondAttribute="bottom" constant="14" id="sJJ-fF-2Rv"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CDg-RY-U7N" secondAttribute="trailing" constant="10" id="wmo-Rm-Dvp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mt4-gP-CfU" firstAttribute="width" secondItem="nvv-jQ-PuX" secondAttribute="width" id="79O-6m-P0u"/>
+                                    <constraint firstItem="Mt4-gP-CfU" firstAttribute="bottom" secondItem="T58-Si-cUU" secondAttribute="bottom" id="Cms-YA-00S"/>
+                                    <constraint firstItem="Mt4-gP-CfU" firstAttribute="top" secondItem="T58-Si-cUU" secondAttribute="top" id="Fs0-ol-PVl"/>
+                                    <constraint firstItem="Mt4-gP-CfU" firstAttribute="trailing" secondItem="T58-Si-cUU" secondAttribute="trailing" id="Jka-fM-hmh"/>
+                                    <constraint firstItem="Mt4-gP-CfU" firstAttribute="leading" secondItem="T58-Si-cUU" secondAttribute="leading" id="oCa-JW-sD9"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="T58-Si-cUU"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="nvv-jQ-PuX"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BND-WC-wRU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="88Y-1Q-zo6"/>
+                            <constraint firstItem="BND-WC-wRU" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="SMR-U9-P7m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BND-WC-wRU" secondAttribute="trailing" id="vSP-nN-MS6"/>
+                            <constraint firstItem="BND-WC-wRU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yza-5m-h8i"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
